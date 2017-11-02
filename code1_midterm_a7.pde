@@ -21,7 +21,8 @@ void draw() {
 
   if (mousePressed) {
     walkers[whichWalker] = new Walker(mouseX, mouseY);
-    whichWalker++;
+    if (whichWalker < walkers.length-1){
+    whichWalker++;}
   }
 }
 
